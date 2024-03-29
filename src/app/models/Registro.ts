@@ -1,9 +1,10 @@
-export class Registro {
+import { Estado } from "./Estado";
 
+export class Registro {
     id!: number;
     nombre!: string;
-    edad!: string;
+    edad!: number;
     email!: string;
     observacion!: string;
-    estado!: string;
+    estado!: Estado;
 }

@@ -13,6 +13,11 @@
 <div class="mb-3 col-sm-4 mx-auto">
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea [(ngModel)]="contacto.observacion"  name="observacion" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <br/><br/>
+  <select [(ngModel)]="contacto.estado" class="form-select" aria-label="Default select example">
+    <option [ngValue]="e" *ngFor="let e of estados" >{{e.descripcion}}</option>
+  </select>
+  <br/><br/>
   <button class="btn btn-primary" (click)="crear()">Guardad</button>
   <button class="btn btn-success" (click)="cancelar()">Cancelar</button>
 </div>
