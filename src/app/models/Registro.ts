@@ -7,4 +7,5 @@ export class Registro {
     email!: string;
     observacion!: string;
     estado!: Estado;
+    esta2!: Estado[];
 }

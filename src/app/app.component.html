@@ -18,6 +18,12 @@
     <option [ngValue]="e" *ngFor="let e of estados" >{{e.descripcion}}</option>
   </select>
   <br/><br/>
+  <br/><br/>
+  <select [(ngModel)]="contacto.esta2" multiple class="form-select" aria-label="Default select example">
+    <option [ngValue]="e" *ngFor="let e of estados" >{{e.descripcion}}</option>
+  </select>
+  <br/><br/>
+  
   <button class="btn btn-primary" (click)="crear()">Guardad</button>
   <button class="btn btn-success" (click)="cancelar()">Cancelar</button>
 </div>
